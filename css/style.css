@@ -1,0 +1,220 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 1rem;
+}
+
+body {
+    background-color: rgba(240, 240, 240, 0.511);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.txt {
+    background-color: rgb(250, 144, 132);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.txt hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-block: 3rem;
+    width: 21rem;
+}
+
+.txt p {
+    width: 20rem;
+    text-align: center;
+}
+
+.img {
+    height: 28rem;
+    background-image: url('../img/bloque_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.txt2 {
+    background-color: rgb(220, 220, 138);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.txt2 hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-block: 3rem;
+    width: 21rem;
+}
+
+.txt2 p {
+    width: 20rem;
+    text-align: center;
+}
+
+.img2 {
+    height: 28rem;
+    background-image: url('../img/bloque_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.h3-b3 {
+    text-align: center;
+}
+
+.sep {
+    height: 3rem;
+    background-image: url('../img/separador.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 1rem;
+    background-position: 50rem 5px;
+}
+.sep2 {
+    height: 3rem;
+    background-image: url('../img/separador.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 1rem;
+    background-position: 48rem 5px;
+}
+
+.card {
+    height: 40rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.card img {
+    border-radius: 1% 1% 0 0;
+}
+.card .info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    height: 100%;
+}
+.card span strong {
+    background-color: gold;
+    border-radius: 20%;
+    padding-inline: 10px;
+    color: black;
+    font-weight: 500;
+}
+.card span {
+    height: 6rem;
+    background-color: rgb(250, 144, 132);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+.info small {
+    color: rgb(250, 144, 132);
+    width: 90%;
+}
+
+.info h4 {
+    width: 90%;
+}
+
+.info button {
+    border: none;
+    background-color: rgb(250, 144, 132);
+    height: 2rem;
+    color: white;
+}
+
+.banner {
+    background-image: url('../img/chef_bg.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    width: 100rem;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.banner div h3 {
+    font-weight: 400;
+}
+
+.banner div p {
+    width: 25%;
+}
+
+.banner button {
+    border: none;
+    background-color: rgb(250, 144, 132);
+    color: white;
+    padding: 0.7rem;
+    padding-inline: 1.2rem;
+    border-radius: 8px;
+}
+
+.footer-links {
+    gap: 2rem;
+    width: 100%;
+}
+
+.footer-links li {
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+
+.footer{
+    display: flex;
+    align-items: end;
+}
