@@ -11,7 +11,6 @@ html{
 
 body {
     background-color: rgba(240, 240, 240, 0.511);
-    overflow-x: hidden;
 }
 
 a{
@@ -21,15 +20,20 @@ a{
 
 ul {
     display: flex;
-    justify-content: start;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     height: 100%;
+    margin-left: -2rem;
 }
 
 ul li {
     list-style: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+
+}
+
+ul li a:hover{
+    color:rgb(250, 144, 132) ;
 }
 
 .logo {
@@ -49,10 +53,32 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-block: 3rem;
+    justify-content: center;
+    height: 20rem;
     width: 21rem;
+}
+
+.txt hgroup::before, .txt2 hgroup::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px; 
+    background-color: white;
+    margin-bottom: 1rem
+}
+
+.txt hgroup::after, .txt2 hgroup::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px; 
+    background-color: white;
+    margin-bottom: 1rem
+}
+
+.txt h3{
+    letter-spacing: 2px;
+    width: 60%;
 }
 
 .txt p {
@@ -80,9 +106,8 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-block: 3rem;
+    justify-content: center;
+    height: 20rem;
     width: 21rem;
 }
 
@@ -108,7 +133,7 @@ ul li {
     background-repeat: no-repeat;
     width: 100%;
     margin-top: 1rem;
-    background-position: 50% 5px;
+    background-position: center;
 }
 .sep2 {
     height: 3rem;
@@ -116,15 +141,15 @@ ul li {
     background-repeat: no-repeat;
     width: 100%;
     margin-top: 1rem;
-    background-position: 50% 5px;
+    background-position:center;
 }
 
 .card {
-    height: 44rem;
-    width: 100%;
+    height: 40rem;
+    width: 95%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .card img {
     border-radius: 1% 1% 0 0;
@@ -172,10 +197,8 @@ ul li {
 .banner {
     background-image: url('../img/chef_bg.jpg');
     height: 90vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 2rem;
 }
 
 .banner div {
@@ -205,57 +228,18 @@ ul li {
 }
 
 .footer-links {
-    gap: 2rem;
     width: 100%;
 }
 
 .footer-links li {
-    font-size: 1.2rem;
+    display: flex;
     align-items: center;
-    justify-content: start;
-    margin-left: 1rem;
+    gap: 1rem;
+    height: 100%;
 }
 
 
 .footer{
     display: flex;
     align-items: end;
-}
-
-
-
-@media( max-width:768px){
-    .logo {
-        margin-left: 30%;
-       align-items: center;
-    }
-
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        height: 100%;
-    }
-}
-
-@media( max-width:400px){
-    .footer{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: end;
-        flex-wrap: wrap;
-    }
-    .logo {
-     margin-left: 1.8rem;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-    
 }
